@@ -1,12 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { PacienteService } from '../../services/paciente.service'; 
 
 @Component({
   selector: 'app-paciente-list',
-  standalone: true,
-  imports: [],
   templateUrl: './paciente-list.component.html',
-  styleUrl: './paciente-list.component.css'
+  styleUrls: ['./paciente-list.component.css'],
+  standalone: true,
+  imports: [CommonModule]
 })
-export class PacienteListComponent {
+export class PacienteListComponent implements OnInit {
+  pacientes: any[] = [];
 
+  constructor(@Inject(PacienteService) private pacienteService: PacienteService) {}
+
+  ngOnInit(): void {
+    this.pacienteService.findAll().subscribe(
+      (data: any[]) => {
+        this.pacientes = data;
+      },
+      (error: any) => {
+        console.error('Erro ao buscar pacientes', error);
+      }
+    );
+  }
 }
