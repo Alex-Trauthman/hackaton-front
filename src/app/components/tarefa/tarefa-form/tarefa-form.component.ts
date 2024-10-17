@@ -1,8 +1,8 @@
 import { Component,Inject,OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { TarefaService } from '../../../services/tarefa.service'; // Ajuste o caminho conforme necessário
-import { StatusTarefa } from '../../../models/status-tarefa.model'; // Ajuste o caminho conforme necessário
+import { TarefaService } from '../../../services/tarefa.service';
+import { StatusTarefa } from '../../../models/status-tarefa.model';
 import { HeaderComponent } from '../../../header/header.component';
 
 @Component({
@@ -36,7 +36,6 @@ export class TarefaFormComponent implements OnInit {
         this.tarefaService.insert(this.tarefa).subscribe(
             (response: any) => {
                 console.log('Tarefa criada com sucesso',response);
-                // Adicione a lógica para redirecionar ou limpar o formulário após a inserção
             },
             (error: any) => {
                 console.error('Erro ao criar tarefa',error);

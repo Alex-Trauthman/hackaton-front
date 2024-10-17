@@ -22,7 +22,7 @@ export class LoginComponent {
         this.authService.findByCpfAndSenha(this.username,this.password).subscribe(
             response => {
                 if(response) {
-                    this.router.navigate(['/pacientes']);
+                    this.router.navigateByUrl('/pacientes');
                 } else {
                     this.errorMessage = 'Usuário ou senha inválidos.';
                 }
