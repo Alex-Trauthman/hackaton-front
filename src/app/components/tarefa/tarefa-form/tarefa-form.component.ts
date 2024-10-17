@@ -1,13 +1,25 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from "../../../header/header.component";
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from '../../../header/header.component'; // Ajuste o caminho conforme necessário
 
 @Component({
   selector: 'app-tarefa-form',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [CommonModule, FormsModule, HeaderComponent],
   templateUrl: './tarefa-form.component.html',
-  styleUrl: './tarefa-form.component.css'
+  styleUrls: ['./tarefa-form.component.css']
 })
 export class TarefaFormComponent {
+  tarefa: any = {
+    id: null,
+    nome: '',
+    descricao: '',
+    status: ''
+  };
 
+  onSubmit() {
+    console.log(this.tarefa);
+    // Adicione a lógica para enviar o formulário para o backend
+  }
 }
