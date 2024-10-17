@@ -28,7 +28,7 @@ export class LoginComponent {
                 }
             },
             error => {
-                this.errorMessage = 'Erro ao tentar fazer login.';
+                this.errorMessage = 'Ocorreu um erro ao realizar login.';
             }
         );
     }

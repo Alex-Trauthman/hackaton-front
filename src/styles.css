@@ -1,8 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-/* App */
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -11,7 +8,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: #233697;
 }
 
-/* Components */
 .footerComponent {
     background-color: #233697;
     background-image: linear-gradient(to top, rgba(35, 54, 151, 1), rgba(35, 54, 151, 0));
@@ -50,7 +46,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin: 20px;
 }
 
-/* Home */
 html, body {
     margin: 0;
     padding: 0;

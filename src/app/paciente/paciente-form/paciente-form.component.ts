@@ -27,8 +27,6 @@ export class PacienteFormComponent {
         condicaoIds: []
     };
 
-
-
     condicoes = [
         { id: 1,descricao: 'Grávidas' },
         { id: 2,descricao: 'Fumantes' },
@@ -36,11 +34,7 @@ export class PacienteFormComponent {
         { id: 4,descricao: 'Diabéticos' }
     ];
 
-
-
     onSubmit() {
         console.log(this.paciente);
     }
-
 }
-

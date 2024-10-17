@@ -27,7 +27,7 @@
             <input type="text" id="nomeMae" [(ngModel)]="paciente.nomeMae" name="nomeMae" required>
         </div>
         <div class="form-group">
-            <label for="anotacao">Anotação:</label>
+            <label for="anotacao">Anotação:<br></label>
             <textarea id="anotacao" [(ngModel)]="paciente.anotacao" name="anotacao" required></textarea>
         </div>
         <div class="form-group">
@@ -39,7 +39,7 @@
             <input type="text" id="cartaoSus" [(ngModel)]="paciente.cartaoSus" name="cartaoSus" required>
         </div>
         <div class="form-group">
-            <label for="sexo">Sexo:</label>
+            <label for="sexo">Sexo:<br></label>
             <select id="sexo" [(ngModel)]="paciente.sexo" name="sexo" required>
                 <option [value]="true">Masculino</option>
                 <option [value]="false">Feminino</option>
@@ -51,11 +51,11 @@
                 name="dataUltimaConsulta" required>
         </div>
         <div class="form-group">
-            <label for="obs">Observações:</label>
+            <label for="obs">Observações:<br></label>
             <textarea id="obs" [(ngModel)]="paciente.obs" name="obs" required></textarea>
         </div>
         <div class="form-group">
-            <label for="condicoes">Condições:</label>
+            <label for="condicoes">Condições:<br></label>
             <select id="condicoes" [(ngModel)]="paciente.condicaoIds" name="condicoes" multiple required>
                 <option *ngFor="let condicao of condicoes" [value]="condicao.id">{{condicao.descricao}}</option>
             </select>
