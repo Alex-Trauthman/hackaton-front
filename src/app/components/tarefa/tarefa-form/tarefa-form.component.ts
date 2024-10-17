@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HeaderComponent } from '../../../header/header.component'; // Ajuste o caminho conforme necessário
+import { HeaderComponent } from '../../../header/header.component';
 
 @Component({
   selector: 'app-tarefa-form',
@@ -20,6 +20,5 @@ export class TarefaFormComponent {
 
   onSubmit() {
     console.log(this.tarefa);
-    // Adicione a lógica para enviar o formulário para o backend
   }
 }

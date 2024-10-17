@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from '../../../header/header.component'; // Ajuste o caminho conforme necessário
-import { TarefaService } from '../../../services/tarefa.service'; // Ajuste o caminho conforme necessário
+import { HeaderComponent } from '../../../header/header.component';
+import { TarefaService } from '../../../services/tarefa.service';
 
 @Component({
   selector: 'app-tarefa-list',

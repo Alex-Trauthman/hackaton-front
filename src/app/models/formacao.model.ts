@@ -5,4 +5,4 @@ export enum Formacao {
     MEDICINA = 'Medicina',
     AGENTE = 'Agente de Saúde',
     DENTISTA = 'Dentista'
-  }
+}
