@@ -1,27 +1,40 @@
-# upsusFront
+upSusFront
+Este projeto foi gerado com Angular CLI versão 18.2.8.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+Descrição
+O upSus é um sistema em desenvolvimento (beta) que visa otimizar o atendimento em saúde. A aplicação permite que profissionais da saúde visualizem pacientes cadastrados e, com base nas condições apresentadas, atribuam tarefas e acompanhamentos.
 
-## Development server
+Pré-requisitos
+Para que o upSusFront funcione corretamente, é necessário que o backend do sistema, desenvolvido em Quarkus, esteja rodando simultaneamente.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Requisitos:
+Node.js e Angular CLI instalados para rodar o front-end.
+Quarkus rodando para o backend.
+PostgreSQL como banco de dados, conforme a estrutura do backend.
+Como executar
+Backend (Quarkus)
+Certifique-se de que o serviço Quarkus está ativo e funcionando antes de iniciar o front-end. O backend fornecerá as APIs necessárias para listar pacientes e gerenciar tarefas.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Navegue para a pasta do projeto Quarkus:
+bash
+Copiar código
+cd <caminho-para-o-backend>
+Execute o Quarkus:
+bash
+Copiar código
+./mvnw quarkus:dev
+O backend estará disponível em http://localhost:8080.
+Frontend (Angular)
+Navegue até a pasta do projeto upSusFront:
+bash
+Copiar código
+cd <caminho-para-o-upSusFront>
+Instale as dependências:
+bash
+Copiar código
+npm install
+Inicie o servidor de desenvolvimento:
+bash
+Copiar código
+ng serve
+Acesse a aplicação em: http://localhost:4200.
